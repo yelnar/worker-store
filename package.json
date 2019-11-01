@@ -30,6 +30,7 @@
   "lint-staged": {
     "*.ts": [
       "eslint --fix",
+      "npm t",
       "git add"
     ]
   }
