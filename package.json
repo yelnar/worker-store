@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Create Redux-like store with trace information about updated properties.",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc -b"
   },
   "author": "Yelnar Nauryzbayev",
   "license": "ISC",

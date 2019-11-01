@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "sourceRoot": "./src",
     "target": "es5",
     "module": "es6",
     "lib": ["es2017"],
@@ -7,6 +8,8 @@
     "sourceMap": true,
     "outDir": "./dist",
     "strict": true,
-    "esModuleInterop": true
-  }
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  },
+  "exclude": ["node_modules", "dist", "**.test.ts", "jest.config.js"]
 }
