@@ -18,7 +18,7 @@ export function trace<T extends TAny>(current: T, previous: T): TBoolean {
       current[key] !== previous[key]
         ? {
             ...delta,
-            [key]: 'true',
+            [key]: true,
           }
         : delta,
     {}
