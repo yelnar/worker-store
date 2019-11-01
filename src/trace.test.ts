@@ -46,17 +46,17 @@ test(`Should return non-empty object if states contain only non-equal primitive 
   })
 })
 
-test(`Should return empty object if states contain same non-primitive values`, () => {
-  const current = {
-    foo: {},
-    bar: [],
-  }
-  const previous = {
-    foo: current.foo,
-    bar: current.bar,
-  }
-  expect(trace(current, previous)).toEqual({})
-})
+// test(`Should return empty object if states contain same non-primitive values`, () => {
+//   const current = {
+//     foo: {},
+//     bar: [],
+//   }
+//   const previous = {
+//     foo: current.foo,
+//     bar: current.bar,
+//   }
+//   expect(trace(current, previous)).toEqual({})
+// })
 
 test(`Should return non-empty object if states contain not same non-primitive values`, () => {
   const current = {
