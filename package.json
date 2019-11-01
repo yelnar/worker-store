@@ -4,6 +4,7 @@
   "description": "Create Redux-like store with trace information about updated properties.",
   "scripts": {
     "test": "jest",
+    "test:staged": "jest --findRelatedTests",
     "build": "tsc -b"
   },
   "author": "Yelnar Nauryzbayev",
@@ -29,9 +30,9 @@
     }
   },
   "lint-staged": {
-    "*.ts": [
+    "src/*.ts": [
       "eslint --fix",
-      "npm t",
+      "npm run test:staged",
       "git add"
     ]
   }
