@@ -1,4 +1,4 @@
-import { createStore } from "./createDeltaStore"
+import { createStore } from "./createStore"
 import { trace } from "./trace"
 
 export default {
